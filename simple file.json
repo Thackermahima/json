@@ -1,0 +1,13 @@
+
+{
+    "firstName":"john",
+    "lastName":"smith",
+    "age":30,
+    "married":true,
+    "hobbies":null,
+    "experience":["c","javascript","SQL"],
+    "address":{
+         "street":"St.martin",
+         "state":"texas"
+    }
+}

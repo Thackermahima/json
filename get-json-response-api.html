@@ -1,0 +1,23 @@
+
+<html lang="en">
+<head>
+    <title>Get JSON from api</title>
+    <script>
+         function collectJSON()
+         {
+             var xmlhttp = new XMLHttpRequest();
+             xmlhttp.open("GET", "https://reqres.in/api/users?page=2",false)
+             xmlhttp.send();
+             if (xmlhttp.readyState == 4 && xmlhttp.status == 200)
+             {
+                 var result = xmlhttp.responseText;
+                 document.getElementById("show").innerHTML = result;
+             }
+         }
+    </script>
+</head>
+<body>
+     <button id="btnClick" onclick="collectJSON();">Collect</button>
+     <div id="show"></div>
+</body>
+</html>
